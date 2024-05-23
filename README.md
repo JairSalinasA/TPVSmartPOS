@@ -17,6 +17,15 @@ TPVPro es un sistema avanzado de Terminal Punto de Venta (TPV) diseñado para op
 - **Gestor de base de datos:** SQL Server, MySQL, PostgreSQL
 - **Lenguaje de programación:** C#
 
+## Contribuciones
+¡Las contribuciones son bienvenidas! Por favor, lee nuestras directrices de contribución para obtener más detalles.
+
+## Licencia
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+
+
+Este README.md incluye toda la información proporcionada, desde la descripción del proyecto hasta los requisitos del sistema, cómo empezar, cómo contribuir y los detalles de la licencia. Si necesitas alguna modificación adicional o tienes alguna pregunta, ¡no dudes en decírmelo!
+
 ## Cómo empezar
 
 1. **Clonar el repositorio:**
@@ -39,14 +48,3 @@ TPVPro es un sistema avanzado de Terminal Punto de Venta (TPV) diseñado para op
 4. **Iniciar la aplicación:**
   ```bash
     dotnet run
-
-
-
-Contribuciones
-¡Las contribuciones son bienvenidas! Por favor, lee nuestras directrices de contribución para obtener más detalles.
-
-Licencia
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
-
-
-Este README.md incluye toda la información proporcionada, desde la descripción del proyecto hasta los requisitos del sistema, cómo empezar, cómo contribuir y los detalles de la licencia. Si necesitas alguna modificación adicional o tienes alguna pregunta, ¡no dudes en decírmelo!
