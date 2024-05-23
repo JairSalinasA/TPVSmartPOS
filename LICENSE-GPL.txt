@@ -1,0 +1,8 @@
+## Licencia
+
+Este proyecto está disponible bajo una licencia dual. Puede elegir entre:
+
+- **Licencia de Código Abierto (GPL v3):** Adecuada para desarrolladores que desean colaborar y utilizar el software en proyectos libres.
+- **Licencia Comercial:** Requerida para el uso comercial del software. Para más información sobre la licencia comercial y los términos, por favor contacte con jairbaldemar@gmail.com.
+
+Para más detalles, consulte el archivo [LICENSE](LICENSE).
