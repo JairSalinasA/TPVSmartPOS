@@ -21,10 +21,10 @@ TPVPro es un sistema avanzado de Terminal Punto de Venta (TPV) diseñado para op
 ¡Las contribuciones son bienvenidas! Por favor, lee nuestras directrices de contribución para obtener más detalles.
 
 ## Licencia
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+Este proyecto está disponible bajo una licencia dual. Puede elegir entre:
 
-
-Este README.md incluye toda la información proporcionada, desde la descripción del proyecto hasta los requisitos del sistema, cómo empezar, cómo contribuir y los detalles de la licencia. Si necesitas alguna modificación adicional o tienes alguna pregunta, ¡no dudes en decírmelo!
+Licencia de Código Abierto (GPL v3): Adecuada para desarrolladores que desean colaborar y utilizar el software en proyectos libres. Consulte el archivo LICENSE-GPL para más detalles.
+Licencia Comercial: Requerida para el uso comercial del software. Para adquirir una licencia comercial y obtener más información sobre los términos de uso, por favor contacte con Jair Salinas.
 
 ## Cómo empezar
 
