@@ -16,3 +16,4 @@ namespace TPVVentaExpress.Domain.Entities
         // Métodos y lógica de negocio
     }
 }
+

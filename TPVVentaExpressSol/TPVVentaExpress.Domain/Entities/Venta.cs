@@ -16,3 +16,4 @@ namespace TPVVentaExpress.Domain.Entities
         // Otros campos y métodos según sea necesario
     }
 }
+

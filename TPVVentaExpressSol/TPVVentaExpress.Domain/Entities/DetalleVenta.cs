@@ -19,3 +19,4 @@ namespace TPVVentaExpress.Domain.Entities
         public Producto Producto { get; set; }
     }
 }
+
