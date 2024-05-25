@@ -1,25 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.Entity.ModelConfiguration;
 using TPVVentaExpress.Domain.Entities;
 
 namespace TPVVentaExpress.Infrastructure.Configurations
 {
-    public class CustomerConfiguration : IEntityTypeConfiguration<Customer>
+    public class CustomerConfiguration : EntityTypeConfiguration<Customer>
     {
-        public void Configure(EntityTypeBuilder<Customer> builder)
+        public CustomerConfiguration()
         {
-            builder.HasKey(c => c.CustomerId);
-            builder.Property(c => c.Name).IsRequired().HasMaxLength(100);
-            builder.OwnsOne(c => c.Address, a =>
-            {
-                a.Property(ad => ad.Street).HasMaxLength(200);
-                a.Property(ad => ad.City).HasMaxLength(100);
-                a.Property(ad => ad.PostalCode).HasMaxLength(20);
-            });
+            // Definir la configuración para la entidad Customer
+            HasKey(c => c.CustomerId);
+            Property(c => c.Name).HasMaxLength(100).IsRequired();
+            // Otras configuraciones si es necesario
         }
     }
-
 }

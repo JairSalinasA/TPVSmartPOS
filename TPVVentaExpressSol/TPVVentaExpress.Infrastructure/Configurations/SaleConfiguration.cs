@@ -1,22 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.Entity.ModelConfiguration;
 using TPVVentaExpress.Domain.Entities;
 
 namespace TPVVentaExpress.Infrastructure.Configurations
 {
-    public class SaleConfiguration : IEntityTypeConfiguration<Sale>
+    public class SaleConfiguration : EntityTypeConfiguration<Sale>
     {
-        public void Configure(EntityTypeBuilder<Sale> builder)
+        public SaleConfiguration()
         {
-            builder.HasKey(s => s.SaleId);
-            builder.Property(s => s.Date).IsRequired();
-            builder.HasMany(s => s.SaleDetails)
-                   .WithOne()
-                   .HasForeignKey(sd => sd.SaleId);
+            // Definir la configuración para la entidad Sale
+            HasKey(s => s.SaleId);
+            // Definir relaciones y otras configuraciones si es necesario
         }
     }
-
 }

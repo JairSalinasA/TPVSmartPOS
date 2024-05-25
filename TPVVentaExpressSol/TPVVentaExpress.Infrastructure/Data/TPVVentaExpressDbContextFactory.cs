@@ -1,20 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 
 namespace TPVVentaExpress.Infrastructure.Data
 {
-    public class TPVVentaExpressDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
+    public class TPVVentaExpressDbContextFactory : IDbContextFactory<ApplicationDbContext>
     {
-        public ApplicationDbContext CreateDbContext(string[] args)
+        public ApplicationDbContext Create()
         {
-            var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
-            optionsBuilder.UseSqlServer("YourConnectionStringHere");
-
-            return new ApplicationDbContext(optionsBuilder.Options);
+            return new ApplicationDbContext();
         }
     }
-
 }
