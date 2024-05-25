@@ -78,7 +78,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Forms\" />
-    <Folder Include="Resources\" />
+    <Folder Include="Resources\Icons\" />
+    <Folder Include="Resources\Images\" />
+    <Folder Include="Resources\Strings\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
