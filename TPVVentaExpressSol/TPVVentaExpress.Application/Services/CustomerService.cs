@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TPVVentaExpress.Application.Interfaces;
 using TPVVentaExpress.Domain.Entities;
+using TPVVentaExpress.Domain.Interfaces;
 
 namespace TPVVentaExpress.Application.Services
 {
