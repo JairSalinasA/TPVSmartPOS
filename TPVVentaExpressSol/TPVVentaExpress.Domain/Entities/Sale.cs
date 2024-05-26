@@ -19,6 +19,7 @@ namespace TPVVentaExpress.Domain.Entities
         // Relaciones de navegación
         public Customer Customer { get; set; }
     }
+
     public class SaleDetail
     {
         public int SaleDetailId { get; set; }

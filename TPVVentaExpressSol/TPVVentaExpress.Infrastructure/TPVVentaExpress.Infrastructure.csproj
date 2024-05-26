@@ -58,6 +58,10 @@
     <Compile Include="Configurations\SaleConfiguration.cs" />
     <Compile Include="Data\ApplicationDbContext.cs" />
     <Compile Include="Data\TPVVentaExpressDbContextFactory.cs" />
+    <Compile Include="Migrations\202405260915491_InitialCreate.cs" />
+    <Compile Include="Migrations\202405260915491_InitialCreate.designer.cs">
+      <DependentUpon>202405260915491_InitialCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\InitialCreate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,6 +78,11 @@
       <Project>{A16409E3-59B4-4634-A4F9-0360E5EE3B82}</Project>
       <Name>TPVVentaExpress.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202405260915491_InitialCreate.resx">
+      <DependentUpon>202405260915491_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
