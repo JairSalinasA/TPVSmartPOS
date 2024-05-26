@@ -13,7 +13,7 @@ namespace TPVVentaExpress.Domain.Entities
         public string Name { get; set; }
         public Address Address { get; set; }
         public string Phone { get; set; }
-        public ICollection<Sale> CustomerSales { get; set; } // Cambia el nombre de la propiedad para evitar conflictos
+        public ICollection<Sale> CustomerSales { get; set; } // Cambié el nombre de la propiedad para evitar conflictos
     }
 
 

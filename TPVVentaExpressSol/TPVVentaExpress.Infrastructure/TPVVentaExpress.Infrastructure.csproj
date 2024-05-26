@@ -58,42 +58,12 @@
     <Compile Include="Configurations\SaleConfiguration.cs" />
     <Compile Include="Data\ApplicationDbContext.cs" />
     <Compile Include="Data\TPVVentaExpressDbContextFactory.cs" />
-    <Compile Include="Migrations\202405260737269_NombreDeLaMigracion.cs" />
-    <Compile Include="Migrations\202405260737269_NombreDeLaMigracion.designer.cs">
-      <DependentUpon>202405260737269_NombreDeLaMigracion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202405260750500_Corrige migracion uno.cs" />
-    <Compile Include="Migrations\202405260750500_Corrige migracion uno.designer.cs">
-      <DependentUpon>202405260750500_Corrige migracion uno.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202405260815033_correccion migracion cero.cs" />
-    <Compile Include="Migrations\202405260815033_correccion migracion cero.designer.cs">
-      <DependentUpon>202405260815033_correccion migracion cero.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202405260847013_Migracion inicial.cs" />
-    <Compile Include="Migrations\202405260847013_Migracion inicial.designer.cs">
-      <DependentUpon>202405260847013_Migracion inicial.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\InitialCreate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CustomerRepository.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="Repositories\SaleRepository.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202405260737269_NombreDeLaMigracion.resx">
-      <DependentUpon>202405260737269_NombreDeLaMigracion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202405260750500_Corrige migracion uno.resx">
-      <DependentUpon>202405260750500_Corrige migracion uno.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202405260815033_correccion migracion cero.resx">
-      <DependentUpon>202405260815033_correccion migracion cero.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202405260847013_Migracion inicial.resx">
-      <DependentUpon>202405260847013_Migracion inicial.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

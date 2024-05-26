@@ -29,6 +29,9 @@ namespace TPVVentaExpress.Domain.Entities
 
         // Propiedad de navegación hacia la entidad Sale
         public Sale Sale { get; set; }
+
+        // Relación de navegación con la entidad Product
+        public virtual Product Product { get; set; }
     }
 
 
