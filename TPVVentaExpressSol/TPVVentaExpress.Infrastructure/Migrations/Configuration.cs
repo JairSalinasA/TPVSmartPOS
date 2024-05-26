@@ -21,16 +21,15 @@ namespace TPVVentaExpress.Infrastructure.Migrations
             {
                 Name = "Ejemplo Customer",
                 Address = new Address("123 Ejemplo St", "Ejemplo City", "Ejemplo State", "12345"),
-                Phone = "123-456-7890",
-                CustomerSales = new List<Sale>()
+                Phone = "123-456-7890"
             };
 
             // Crear una venta
             var sale = new Sale
             {
                 Date = DateTime.Now,
-                Customer = customer,
-                Total = 100 // Ejemplo de total de venta
+                Total = 100, // Ejemplo de total de venta
+                Customer = customer
             };
 
             // Crear detalles de venta
@@ -52,7 +51,7 @@ namespace TPVVentaExpress.Infrastructure.Migrations
             sale.SaleDetails = new List<SaleDetail> { saleDetail1, saleDetail2 };
 
             // Agregar la venta al cliente
-            customer.CustomerSales.Add(sale);
+            customer.CustomerSales = new List<Sale> { sale };
 
             // Agregar el cliente, la venta y los detalles de venta al contexto
             context.Customers.AddOrUpdate(c => c.Name, customer);
@@ -60,6 +59,7 @@ namespace TPVVentaExpress.Infrastructure.Migrations
             // Guardar cambios en la base de datos
             context.SaveChanges();
         }
+
 
     }
 }

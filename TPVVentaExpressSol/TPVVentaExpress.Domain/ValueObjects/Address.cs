@@ -8,11 +8,14 @@ namespace TPVVentaExpress.Domain.ValueObjects
 {
     public class Address
     {
-        public string Street { get; }
-        public string City { get; }
-        public string State { get; }
-        public string PostalCode { get; }
-
+        public string Street { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string PostalCode { get; set; }
+        public Address()
+        {
+            // Constructor sin parámetros
+        }
         public Address(string street, string city, string state, string postalCode)
         {
             Street = street;
@@ -20,8 +23,7 @@ namespace TPVVentaExpress.Domain.ValueObjects
             State = state;
             PostalCode = postalCode;
         }
-
-        // Equals and GetHashCode methods
     }
+
 
 }

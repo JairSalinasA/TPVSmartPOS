@@ -1,5 +1,6 @@
 ﻿using System.Data.Entity;
 using TPVVentaExpress.Domain.Entities;
+using TPVVentaExpress.Domain.ValueObjects;
 using TPVVentaExpress.Infrastructure.Configurations;
 
 namespace TPVVentaExpress.Infrastructure.Data
@@ -18,7 +19,9 @@ namespace TPVVentaExpress.Infrastructure.Data
         {
             modelBuilder.Configurations.Add(new ProductConfiguration());
             modelBuilder.Configurations.Add(new SaleConfiguration());
-            modelBuilder.Configurations.Add(new CustomerConfiguration()); 
+            modelBuilder.Configurations.Add(new CustomerConfiguration());
+            // Configuración de la propiedad Address como tipo complejo para Customer
+            modelBuilder.ComplexType<Address>();
         }
     }
 }

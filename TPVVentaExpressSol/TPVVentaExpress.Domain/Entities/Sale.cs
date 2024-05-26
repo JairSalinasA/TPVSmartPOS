@@ -26,7 +26,11 @@ namespace TPVVentaExpress.Domain.Entities
         public int ProductId { get; set; }
         public int Quantity { get; set; }
         public decimal UnitPrice { get; set; }
+
+        // Propiedad de navegación hacia la entidad Sale
+        public Sale Sale { get; set; }
     }
+
 
 
 }
