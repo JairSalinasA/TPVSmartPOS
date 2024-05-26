@@ -7,31 +7,15 @@ namespace TPVVentaExpress.Infrastructure.Configurations
     {
         public SaleConfiguration()
         {
-            // Definir la configuración para la entidad Sale
+            ToTable("Sales");
             HasKey(s => s.SaleId);
-            // Definir relaciones y otras configuraciones si es necesario
-
-            // Relación con la entidad Customer
+            Property(s => s.Date).IsRequired();
+            Property(s => s.Total).IsRequired().HasPrecision(18, 2);
             HasRequired(s => s.Customer)
                 .WithMany(c => c.CustomerSales)
-                .HasForeignKey(s => s.CustomerId)
-                .WillCascadeOnDelete(false); // Opcional: desactivar eliminación en cascada
+                .HasForeignKey(s => s.CustomerId);
         }
     }
 
-    public class SaleDetailConfiguration : EntityTypeConfiguration<SaleDetail>
-    {
-        public SaleDetailConfiguration()
-        {
-            // Definir la configuración para la entidad SaleDetail
-            HasKey(sd => sd.SaleDetailId);
-            // Definir relaciones y otras configuraciones si es necesario
-
-            // Relación con la entidad Sale
-            HasRequired(sd => sd.Sale)
-                .WithMany(s => s.SaleDetails)
-                .HasForeignKey(sd => sd.SaleId)
-                .WillCascadeOnDelete(true); // Opcional: activar eliminación en cascada
-        }
-    }
+     
 }

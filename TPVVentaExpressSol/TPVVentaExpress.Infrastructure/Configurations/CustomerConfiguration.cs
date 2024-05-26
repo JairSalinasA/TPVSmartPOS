@@ -6,8 +6,10 @@ public class CustomerConfiguration : EntityTypeConfiguration<Customer>
     public CustomerConfiguration()
     {
         // Definir la configuración para la entidad Customer
+        ToTable("Customers");
         HasKey(c => c.CustomerId);
-        Property(c => c.Name).HasMaxLength(100).IsRequired();
+        Property(c => c.Name).IsRequired().HasMaxLength(100); 
+        Property(c => c.Phone).HasMaxLength(15);
 
         // Mapear las propiedades de Address a sus columnas correspondientes
         Property(c => c.Address.Street).HasColumnName("StreetColumn");

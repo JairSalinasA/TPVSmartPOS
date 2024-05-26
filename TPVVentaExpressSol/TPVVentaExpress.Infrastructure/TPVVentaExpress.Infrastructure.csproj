@@ -56,6 +56,8 @@
     <Compile Include="Configurations\CustomerConfiguration.cs" />
     <Compile Include="Configurations\ProductConfiguration.cs" />
     <Compile Include="Configurations\SaleConfiguration.cs" />
+    <Compile Include="Configurations\SaleDetailConfiguration.cs" />
+    <Compile Include="Configurations\UserConfiguration.cs" />
     <Compile Include="Data\ApplicationDbContext.cs" />
     <Compile Include="Data\TPVVentaExpressDbContextFactory.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -64,6 +66,7 @@
     <Compile Include="Repositories\CustomerRepository.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="Repositories\SaleRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

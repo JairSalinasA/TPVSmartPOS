@@ -19,7 +19,7 @@ namespace TPVVentaExpress.Infrastructure.Migrations
             // Crear productos
             var product1 = new Product
             {
-                ProductId = 1, // Asegúrate de que el ProductId coincide con los detalles de ventas
+                ProductId = 1,
                 Name = "Product 1",
                 Price = 50,
                 Stock = 100,
@@ -28,7 +28,7 @@ namespace TPVVentaExpress.Infrastructure.Migrations
 
             var product2 = new Product
             {
-                ProductId = 2, // Asegúrate de que el ProductId coincide con los detalles de ventas
+                ProductId = 2,
                 Name = "Product 2",
                 Price = 100,
                 Stock = 50,
@@ -47,7 +47,7 @@ namespace TPVVentaExpress.Infrastructure.Migrations
                 Name = "Ejemplo Customer",
                 Address = new Address("123 Ejemplo St", "Ejemplo City", "Ejemplo State", "12345"),
                 Phone = "123-456-7890",
-                CustomerSales = new List<Sale>() // Asegúrate de que la propiedad se llama 'Sales'
+                CustomerSales = new List<Sale>()
             };
 
             // Crear una venta
@@ -55,23 +55,23 @@ namespace TPVVentaExpress.Infrastructure.Migrations
             {
                 Date = DateTime.Now,
                 Customer = customer,
-                Total = 200, // Ejemplo de total de venta
+                Total = 200,
                 SaleDetails = new List<SaleDetail>()
             };
 
             // Crear detalles de venta
             var saleDetail1 = new SaleDetail
             {
-                ProductId = 1, // ID del producto asociado
-                Quantity = 2, // Cantidad comprada
-                UnitPrice = 50 // Precio unitario
+                ProductId = 1,
+                Quantity = 2,
+                UnitPrice = 50
             };
 
             var saleDetail2 = new SaleDetail
             {
-                ProductId = 2, // ID del producto asociado
-                Quantity = 1, // Cantidad comprada
-                UnitPrice = 100 // Precio unitario
+                ProductId = 2,
+                Quantity = 1,
+                UnitPrice = 100
             };
 
             // Agregar detalles de venta a la venta
@@ -86,10 +86,17 @@ namespace TPVVentaExpress.Infrastructure.Migrations
 
             // Guardar cambios en la base de datos
             context.SaveChanges();
+
+            // Crear un usuario base para el sistema de inicio de sesión
+            var usuarioBase = new User
+            {
+                Username = "admin",
+                Password = "admin123", // ¡Recuerda cambiar esto por una contraseña segura en un entorno real!
+                Role = "Administrador"
+            };
+
+            context.Users.AddOrUpdate(u => u.Username, usuarioBase);
+            context.SaveChanges();
         }
-
-
-
-
     }
 }
