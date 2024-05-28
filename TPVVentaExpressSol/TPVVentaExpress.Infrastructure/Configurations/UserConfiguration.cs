@@ -8,6 +8,7 @@ namespace TPVVentaExpress.Infrastructure.Configurations
     {
         public UserConfiguration()
         {
+            ToTable("Users"); 
             HasKey(u => u.UserId);
 
             Property(u => u.Username)

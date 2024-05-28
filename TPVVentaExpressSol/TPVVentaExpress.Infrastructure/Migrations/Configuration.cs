@@ -95,7 +95,7 @@ namespace TPVVentaExpress.Infrastructure.Migrations
                 Role = "Administrador"
             };
 
-            context.Users.AddOrUpdate(u => u.Username, usuarioBase);
+            context.User.AddOrUpdate(u => u.Username, usuarioBase);
             context.SaveChanges();
         }
     }

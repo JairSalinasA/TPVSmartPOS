@@ -51,9 +51,10 @@ namespace TPVVentaExpress.UI.Forms.Login
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(10, 10);
+            this.panel1.Location = new System.Drawing.Point(13, 12);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(292, 438);
+            this.panel1.Size = new System.Drawing.Size(390, 540);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -71,8 +72,9 @@ namespace TPVVentaExpress.UI.Forms.Login
             this.tableLayoutPanel1.Controls.Add(this.linkLabel2, 0, 8);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(10);
+            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
             this.tableLayoutPanel1.RowCount = 9;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.36361F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.954549F));
@@ -83,16 +85,17 @@ namespace TPVVentaExpress.UI.Forms.Login
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.954549F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.954549F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.954549F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(292, 438);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(390, 540);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(17, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(109, 79);
+            this.pictureBox1.Size = new System.Drawing.Size(145, 97);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -103,9 +106,10 @@ namespace TPVVentaExpress.UI.Forms.Login
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(13, 95);
+            this.label1.Location = new System.Drawing.Point(17, 117);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 25);
+            this.label1.Size = new System.Drawing.Size(216, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Inicio de sesión";
             // 
@@ -114,9 +118,10 @@ namespace TPVVentaExpress.UI.Forms.Login
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(13, 136);
+            this.label2.Location = new System.Drawing.Point(17, 168);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(249, 21);
+            this.label2.Size = new System.Drawing.Size(311, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Ingresa tu correo y contraseña";
             // 
@@ -131,15 +136,15 @@ namespace TPVVentaExpress.UI.Forms.Login
             this.rjTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rjTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.rjTextBox1.Location = new System.Drawing.Point(14, 181);
-            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.rjTextBox1.Location = new System.Drawing.Point(18, 224);
+            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.rjTextBox1.Multiline = false;
             this.rjTextBox1.Name = "rjTextBox1";
-            this.rjTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.rjTextBox1.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.rjTextBox1.PasswordChar = false;
             this.rjTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox1.PlaceholderText = "";
-            this.rjTextBox1.Size = new System.Drawing.Size(264, 31);
+            this.rjTextBox1.Size = new System.Drawing.Size(354, 39);
             this.rjTextBox1.TabIndex = 3;
             this.rjTextBox1.Texts = "";
             this.rjTextBox1.UnderlinedStyle = false;
@@ -155,15 +160,15 @@ namespace TPVVentaExpress.UI.Forms.Login
             this.rjTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rjTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.rjTextBox2.Location = new System.Drawing.Point(14, 222);
-            this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.rjTextBox2.Location = new System.Drawing.Point(18, 275);
+            this.rjTextBox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.rjTextBox2.Multiline = false;
             this.rjTextBox2.Name = "rjTextBox2";
-            this.rjTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.rjTextBox2.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.rjTextBox2.PasswordChar = false;
             this.rjTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox2.PlaceholderText = "";
-            this.rjTextBox2.Size = new System.Drawing.Size(264, 31);
+            this.rjTextBox2.Size = new System.Drawing.Size(354, 39);
             this.rjTextBox2.TabIndex = 4;
             this.rjTextBox2.Texts = "";
             this.rjTextBox2.UnderlinedStyle = false;
@@ -180,9 +185,10 @@ namespace TPVVentaExpress.UI.Forms.Login
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(13, 303);
+            this.rjButton1.Location = new System.Drawing.Point(17, 376);
+            this.rjButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(266, 35);
+            this.rjButton1.Size = new System.Drawing.Size(356, 43);
             this.rjButton1.TabIndex = 5;
             this.rjButton1.Text = "Iniciar Sesión";
             this.rjButton1.TextColor = System.Drawing.Color.White;
@@ -193,9 +199,10 @@ namespace TPVVentaExpress.UI.Forms.Login
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(173, 259);
+            this.linkLabel1.Location = new System.Drawing.Point(232, 321);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(106, 41);
+            this.linkLabel1.Size = new System.Drawing.Size(141, 51);
             this.linkLabel1.TabIndex = 6;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Olvidé mi contraseña";
@@ -212,9 +219,10 @@ namespace TPVVentaExpress.UI.Forms.Login
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(13, 344);
+            this.rjButton2.Location = new System.Drawing.Point(17, 427);
+            this.rjButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(266, 35);
+            this.rjButton2.Size = new System.Drawing.Size(356, 43);
             this.rjButton2.TabIndex = 7;
             this.rjButton2.Text = "Registrarse";
             this.rjButton2.TextColor = System.Drawing.Color.White;
@@ -225,24 +233,26 @@ namespace TPVVentaExpress.UI.Forms.Login
             this.linkLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.LinkColor = System.Drawing.Color.White;
-            this.linkLabel2.Location = new System.Drawing.Point(75, 398);
+            this.linkLabel2.Location = new System.Drawing.Point(101, 492);
+            this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(141, 13);
+            this.linkLabel2.Size = new System.Drawing.Size(187, 17);
             this.linkLabel2.TabIndex = 8;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "¿No tienes cuenta? Ver mas";
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.ClientSize = new System.Drawing.Size(312, 458);
+            this.ClientSize = new System.Drawing.Size(416, 564);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "LoginForm";
-            this.Padding = new System.Windows.Forms.Padding(10);
+            this.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
             this.panel1.ResumeLayout(false);

@@ -12,7 +12,7 @@ namespace TPVVentaExpress.Infrastructure.Data
         public DbSet<Sale> Sales { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<SaleDetail> SaleDetails { get; set; }
-        public DbSet<User> Users { get; set; }
+        public DbSet<User> User { get; set; }
         public ApplicationDbContext() : base("ApplicationDbContext")
         {
         }

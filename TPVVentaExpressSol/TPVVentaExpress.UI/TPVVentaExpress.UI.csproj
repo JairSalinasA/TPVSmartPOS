@@ -80,6 +80,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\UserViewModel.cs" />
     <EmbeddedResource Include="Forms\Login\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,7 +112,6 @@
     <Folder Include="Resources\Images\" />
     <Folder Include="Resources\Strings\" />
     <Folder Include="Resources\Style\" />
-    <Folder Include="ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

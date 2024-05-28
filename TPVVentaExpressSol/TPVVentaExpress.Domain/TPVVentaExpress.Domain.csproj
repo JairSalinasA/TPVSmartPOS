@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,9 +55,9 @@
     <Compile Include="Interfaces\IUserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CustomerDomainService.cs" />
-    <Compile Include="Services\DomainService.cs" />
     <Compile Include="Services\ProductDomainService.cs" />
     <Compile Include="Services\SaleDomainService.cs" />
+    <Compile Include="Services\UserDomainService.cs" />
     <Compile Include="ValueObjects\Address.cs" />
     <Compile Include="ValueObjects\Money.cs" />
     <Compile Include="ValueObjects\ProductCode.cs" />
