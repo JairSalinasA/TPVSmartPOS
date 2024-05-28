@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace TPVVentaExpress.UI.Forms.Login
 {
-    public partial class LoginForm : Form
+    public partial class RegisterForm : Form
     {
-        public LoginForm()
+        public RegisterForm()
         {
             InitializeComponent();
-        }
-
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-            RegisterForm registerForm = new RegisterForm();
-            registerForm.Show();
-            this.Hide();
         }
     }
 }
