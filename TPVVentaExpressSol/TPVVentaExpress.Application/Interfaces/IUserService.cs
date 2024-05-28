@@ -6,6 +6,6 @@ namespace TPVVentaExpress.Application.Interfaces
     public interface IUserService
     {
         bool ValidateUser(string username, string password);
-        void RegisterUser(User user);
+        void RegisterUser(User user);  
     }
 }
