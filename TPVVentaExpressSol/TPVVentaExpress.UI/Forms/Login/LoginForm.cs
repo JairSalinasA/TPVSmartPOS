@@ -17,11 +17,5 @@ namespace TPVVentaExpress.UI.Forms.Login
             InitializeComponent();
         }
 
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-            RegisterForm registerForm = new RegisterForm();
-            registerForm.Show();
-            this.Hide();
-        }
     }
 }

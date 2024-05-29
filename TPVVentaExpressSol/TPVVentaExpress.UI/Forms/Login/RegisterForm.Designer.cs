@@ -1,5 +1,4 @@
-﻿
-namespace TPVVentaExpress.UI.Forms.Login
+﻿namespace TPVVentaExpress.UI.Forms.Login
 {
     partial class RegisterForm
     {
@@ -29,17 +28,10 @@ namespace TPVVentaExpress.UI.Forms.Login
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // RegisterForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(401, 526);
-            this.Name = "RegisterForm";
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Text = "RegisterForm";
-            this.ResumeLayout(false);
-
         }
 
         #endregion

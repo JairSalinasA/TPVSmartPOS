@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace TPVVentaExpress.UI.Forms.Login
 {
-    public partial class RegisterForm : Form
+    public partial class RegisterForm: Form
     {
         public RegisterForm()
         {
