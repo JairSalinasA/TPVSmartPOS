@@ -84,10 +84,10 @@
     <Compile Include="Forms\Login\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\RecoveryPassword.cs">
+    <Compile Include="Forms\Login\RecoveryPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\RecoveryPassword.Designer.cs">
+    <Compile Include="Forms\Login\RecoveryPassword.Designer.cs">
       <DependentUpon>RecoveryPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -102,7 +102,7 @@
     <EmbeddedResource Include="Forms\Login\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\RecoveryPassword.resx">
+    <EmbeddedResource Include="Forms\Login\RecoveryPassword.resx">
       <DependentUpon>RecoveryPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
