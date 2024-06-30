@@ -34,17 +34,64 @@ namespace SmartPost.DataAccess.Repositories
         //Metodos, comportamientos
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            parameters = new List<SqlParameter>
+            {
+                new SqlParameter("@UserID", id)
+            };
+            ExecuteNonQuery(delete);
         }
 
         public IEnumerable<User> GetAll()
         {
-            throw new NotImplementedException();
+            DataTable table = ExecuteReader(getAll);
+            List<User> users = new List<User>();
+
+            foreach (DataRow row in table.Rows)
+            {
+                users.Add(new User
+                {
+                    UserID = Convert.ToInt32(row["UserID"]),
+                    FirstName = row["FirstName"].ToString(),
+                    LastName = row["LastName"].ToString(),
+                    Email = row["Email"].ToString(),
+                    Password = row["Password"].ToString(),
+                    Phone = row["Phone"] as string,
+                    BirthDate = row["BirthDate"] as DateTime?,
+                    RegistrationDate = Convert.ToDateTime(row["RegistrationDate"]),
+                    LastAccess = Convert.ToDateTime(row["LastAccess"]),
+                    IsActive = Convert.ToBoolean(row["IsActive"])
+                });
+            }
+            return users;
         }
 
         public User GetById(int id)
         {
-            throw new NotImplementedException();
+            parameters = new List<SqlParameter>
+            {
+                new SqlParameter("@UserID", id)
+            };
+
+            DataTable table = ExecuteReader(getById);
+
+            if (table.Rows.Count > 0)
+            {
+                DataRow row = table.Rows[0];
+                return new User
+                {
+                    UserID = Convert.ToInt32(row["UserID"]),
+                    FirstName = row["FirstName"].ToString(),
+                    LastName = row["LastName"].ToString(),
+                    Email = row["Email"].ToString(),
+                    Password = row["Password"].ToString(),
+                    Phone = row["Phone"] as string,
+                    BirthDate = row["BirthDate"] as DateTime?,
+                    RegistrationDate = Convert.ToDateTime(row["RegistrationDate"]),
+                    LastAccess = Convert.ToDateTime(row["LastAccess"]),
+                    IsActive = Convert.ToBoolean(row["IsActive"])
+                };
+            }
+            return null;
         }
 
         public int Insert(User entity)
@@ -65,7 +112,19 @@ namespace SmartPost.DataAccess.Repositories
 
         public int Update(User entity)
         {
-            throw new NotImplementedException();
+            parameters = new List<SqlParameter>
+            {
+                new SqlParameter("@UserID", entity.UserID),
+                new SqlParameter("@FirstName", entity.FirstName),
+                new SqlParameter("@LastName", entity.LastName),
+                new SqlParameter("@Email", entity.Email),
+                new SqlParameter("@Password", entity.Password),
+                new SqlParameter("@Phone", (object)entity.Phone ?? DBNull.Value),
+                new SqlParameter("@BirthDate", (object)entity.BirthDate ?? DBNull.Value),
+                new SqlParameter("@LastAccess", entity.LastAccess),
+                new SqlParameter("@IsActive", entity.IsActive)
+            };
+            return ExecuteNonQuery(update);
         }
     }
 }
